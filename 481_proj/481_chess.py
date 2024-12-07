@@ -1,7 +1,8 @@
 import chess
+from chess_ai import *
 
 #stagnant board for kings pawn opening
-def kings_pawn_opening_setup():
+def kings_pawn_opening_setup(board):
 	board.push_san('e4')
 	board.push_san('e5')
 	board.push_san('Nf3')
@@ -28,8 +29,12 @@ def kings_pawn_opening_setup():
 
 if __name__ == '__main__':
 	#create the chess board
+	print("Test board\n")
 	board = chess.Board()
-	kings_pawn_opening_setup()
+	kings_pawn_opening_setup(board)
 	print(board)
 	#use the A* search algorithm for winning pieces condition
+	print("\nBase board\n")
+	c_ai = chess_alpha_beta_search()
+	print(c_ai.board)
 	
