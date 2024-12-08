@@ -111,12 +111,24 @@ class chess_ai():
 
         best_move = None
 
-        for move in moves:
-            board.push(move)
-            self.print_board_replace(board)
-            val = min_val(self, board=board, alpha=alpha, beta=beta, depth=(depth -1))
-            board.pop()
-            if val > alpha:
-                alpha = val
-                best_move = move
+        # White turn (max)
+        if board.turn:
+            for move in moves:
+                board.push(move)
+                self.print_board_replace(board)
+                val = min_val(self, board=board, alpha=alpha, beta=beta, depth=(depth -1))
+                board.pop()
+                if val > alpha:
+                    alpha = val
+                    best_move = move
+        # Black turn (min)
+        else:
+            for move in moves:
+                board.push(move)
+                self.print_board_replace(board)
+                val = max_val(self, board=board, alpha=alpha, beta=beta, depth=(depth -1))
+                board.pop()
+                if val < beta:
+                    beta = val
+                    best_move = move
         return best_move

@@ -68,6 +68,7 @@ if __name__ == '__main__':
 	#use the A* search algorithm for winning pieces condition
 
 	c_ai = chess_ai()
+	
 	# print("\nKings Pawn opening depth 5\n")
 	# kings_pawn_opening_setup(c_ai.board)
 	# print(c_ai.alpha_beta_search(depth=5))
