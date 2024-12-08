@@ -32,14 +32,46 @@ def print_board_replace(board):
 		print("\033[A", end="")
 	print(board)
 
+def play_game(board, d1, d2):
+	board = board.board
+	p1 = chess_ai()
+	p2 = chess_ai()
+	turn = True
+	move_count = 1
+	while(board.is_stalemate() != True) and (board.is_checkmate() != True):
+		if turn:
+			p1.board = board
+			move = p1.alpha_beta_search(depth=d1)
+			board.push(move)
+			turn = False
+			print_board_replace(board)
+			print("Turn: " + str(move_count))
+			move_count += 1
+		else:
+			p2.board = board
+			move = p2.alpha_beta_search(depth=d2)
+			board.push(move)
+			turn = True
+			print_board_replace(board)
+			print("Turn: " + str(move_count))
+			move_count += 1
+	return 
 
 if __name__ == '__main__':
+
 	#create the chess board
-	print("Test board\n")
-	board = chess.Board()
-	kings_pawn_opening_setup(board)
-	print(board)
+	# print("Test board\n")
+	# board = chess.Board()
+	# kings_pawn_opening_setup(board)
+	# print(board)
+
 	#use the A* search algorithm for winning pieces condition
-	print("\Play Game depth 3 vs depth 5\n")
+
 	c_ai = chess_ai()
-	print(c_ai.alpha_beta_search(depth=5))
+	# print("\nKings Pawn opening depth 5\n")
+	# kings_pawn_opening_setup(c_ai.board)
+	# print(c_ai.alpha_beta_search(depth=5))
+
+	print("\nPlay Game depth 2 vs depth 4\n")
+	c_ai.board.reset
+	play_game(board=c_ai, d1=2,d2=4)

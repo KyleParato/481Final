@@ -60,6 +60,8 @@ class chess_ai():
         if len(list(board.legal_moves)) == 0:
             return True
     
+
+    # alpha beta search with depth
     def alpha_beta_search(self, depth):
 
         #min
@@ -118,6 +120,3 @@ class chess_ai():
                 alpha = val
                 best_move = move
         return best_move
-
-
-
