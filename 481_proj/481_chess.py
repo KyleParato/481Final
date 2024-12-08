@@ -27,6 +27,12 @@ def kings_pawn_opening_setup(board):
 	board.push_san('a5')
 	print(board.legal_moves)
 
+def print_board_replace(board):
+	for i in range(0,8):
+		print("\033[A", end="")
+	print(board)
+
+
 if __name__ == '__main__':
 	#create the chess board
 	print("Test board\n")
@@ -34,7 +40,6 @@ if __name__ == '__main__':
 	kings_pawn_opening_setup(board)
 	print(board)
 	#use the A* search algorithm for winning pieces condition
-	print("\nBase board\n")
-	c_ai = chess_alpha_beta_search()
-	print(c_ai.board)
-	
+	print("\Play Game depth 3 vs depth 5\n")
+	c_ai = chess_ai()
+	print(c_ai.alpha_beta_search(depth=5))
