@@ -1,4 +1,5 @@
 import chess
+import time
 from chess_ai import *
 
 #stagnant board for kings pawn opening
@@ -25,7 +26,7 @@ def kings_pawn_opening_setup(board):
 	board.push_san('b6')
 	board.push_san('a4')
 	board.push_san('a5')
-	print(board.legal_moves)
+	#print(board.legal_moves)
 
 def print_board_replace(board):
 	for i in range(0,8):
@@ -37,23 +38,34 @@ def play_game(board, d1, d2):
 	p1 = chess_ai()
 	p2 = chess_ai()
 	turn = True
+	w_last_move = None
+	b_last_move = None
 	move_count = 1
+	print(board)
 	while(board.is_stalemate() != True) and (board.is_checkmate() != True):
 		if turn:
 			p1.board = board
-			move = p1.alpha_beta_search(depth=d1)
+			move = p1.alpha_beta_search_no_print(depth=d1, last_move=w_last_move)
 			board.push(move)
+			# print(w_last_move)
+			# print(move)
+			w_last_move = str(move)
+			w_last_move = w_last_move[2:] + w_last_move[:2]
 			turn = False
 			print_board_replace(board)
-			print("Turn: " + str(move_count))
+			#print("Turn: " + str(move_count))
 			move_count += 1
 		else:
 			p2.board = board
-			move = p2.alpha_beta_search(depth=d2)
+			move = p2.alpha_beta_search_no_print(depth=d2, last_move=b_last_move)
+			# print(b_last_move)
+			# print(move)
 			board.push(move)
+			b_last_move = str(move)
+			b_last_move = b_last_move[2:] + b_last_move[:2]
 			turn = True
 			print_board_replace(board)
-			print("Turn: " + str(move_count))
+			#print("Turn: " + str(move_count))
 			move_count += 1
 	return 
 
@@ -69,10 +81,21 @@ if __name__ == '__main__':
 
 	c_ai = chess_ai()
 	
-	# print("\nKings Pawn opening depth 5\n")
-	# kings_pawn_opening_setup(c_ai.board)
-	# print(c_ai.alpha_beta_search(depth=5))
+	kings_pawn_opening_setup(c_ai.board)
 
-	print("\nPlay Game depth 2 vs depth 4\n")
-	c_ai.board.reset
-	play_game(board=c_ai, d1=2,d2=4)
+	print("\nOriginal Board")
+	print(c_ai.board)
+
+	for d in range(1,11):
+		print("\nBest Move depth " + str(d) + "\n")
+		start = time.time()
+		print(f"\nBest move: " + str(c_ai.alpha_beta_search(depth=d)))
+		end = time.time()
+		print(f"Elapsed time: {(end-start):.2f} seconds")
+
+	print()
+	# Play Game
+
+	# print("\nPlay Game depth 2 vs depth 4\n")
+	# c_ai.board.reset
+	# play_game(board=c_ai, d1=2,d2=4)
