@@ -46,7 +46,8 @@ class chess_ai():
                 cost += 1000
             return cost
         
-        squares = chess.SQUARE_NAMES
+        squares = chess.SQUARES
+        square_names = chess.SQUARE_NAMES
         fen_str = board.board_fen()
         fen = []
         
@@ -55,17 +56,26 @@ class chess_ai():
             fen_str = fen_str[fen_str.find("/")+1:]
         fen.append(fen_str)
 
-
-
+        square_num = 0
         for row in reversed(fen):
-            row_num = 0
             for c in row:
                 if str.isdigit(c):
-                    row_num += int(c)
+                    square_num += int(c)
                 else:
                     util += material_cost(c)
-                    row_num += 1
-                    #print(board.attackers(turn,squares[row_num]))
+                    square_num += 1
+                    atk = board.attacks(squares[square_num-1])
+                    if len(atk) != 0:
+                        atks = list(atk)
+                        for a in atks:
+                            piece = str(board.piece_at(squares[a]))
+                            x = material_cost(piece)
+                            if x < 999 and x > 0:
+                                util += x + 1
+                            if x > -999 and x < 0:
+                                util += x -1
+
+                        util += 1
             pass
             #print(row)
 
@@ -79,7 +89,6 @@ class chess_ai():
 
     # alpha beta search with depth
     def alpha_beta_search(self, depth):
-
         #min
         def min_val(self, board, alpha, beta, depth):
             if self.terminal_test(board) or depth == 0:
@@ -95,8 +104,7 @@ class chess_ai():
                     return val
                 beta = min(beta, val)
                 moves = moves[1:]
-            return val
-        
+            return val 
         #max
         def max_val(self, board, alpha, beta, depth):
             if self.terminal_test(board) or depth == 0:

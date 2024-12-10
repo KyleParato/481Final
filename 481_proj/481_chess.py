@@ -49,20 +49,20 @@ def play_game(board, d1, d2):
 			board.push(move)
 			# print(w_last_move)
 			# print(move)
-			w_last_move = str(move)
-			w_last_move = w_last_move[2:] + w_last_move[:2]
+			# w_last_move = str(move)
+			# w_last_move = w_last_move[2:] + w_last_move[:2]
 			turn = False
 			print_board_replace(board)
 			#print("Turn: " + str(move_count))
 			move_count += 1
 		else:
 			p2.board = board
-			move = p2.alpha_beta_search_no_print(depth=d2, last_move=b_last_move)
+			move = p2.alpha_beta_search_no_print(depth=d2)
 			# print(b_last_move)
 			# print(move)
 			board.push(move)
-			b_last_move = str(move)
-			b_last_move = b_last_move[2:] + b_last_move[:2]
+			# b_last_move = str(move)
+			# b_last_move = b_last_move[2:] + b_last_move[:2]
 			turn = True
 			print_board_replace(board)
 			#print("Turn: " + str(move_count))
@@ -81,20 +81,21 @@ if __name__ == '__main__':
 
 	c_ai = chess_ai()
 	
-	kings_pawn_opening_setup(c_ai.board)
+	# kings_pawn_opening_setup(c_ai.board)
 
-	print("\nOriginal Board")
-	print(c_ai.board)
+	# # print("\nOriginal Board")
+	# # print(c_ai.board)
 
-	for d in range(1,11):
+	for d in range(1,6):
 		print("\nBest Move depth " + str(d) + "\n")
 		start = time.time()
 		print(f"\nBest move: " + str(c_ai.alpha_beta_search(depth=d)))
 		end = time.time()
 		print(f"Elapsed time: {(end-start):.2f} seconds")
 
-	print()
+	# # # print()
 	# Play Game
+	# time.sleep(5)
 
 	# print("\nPlay Game depth 2 vs depth 4\n")
 	# c_ai.board.reset
