@@ -95,14 +95,19 @@ def play_game(board, d1, d2):
 			print_board_replace(board) # show move
 			move_count += 1
 
-	utility_score = p1.current_utility_score(p1.board)
-	print(f'Utility Score: {utility_score}')
-	print(f'Number of moves: {move_count}')
-	if board.is_checkmate():
+	utility_score = p1.current_utility_score(p1.board) # utility score after game
+	print(f'Utility Score: {utility_score}')		   # print utility score
+	print(f'Number of moves: {move_count}')			   # print number of moves
+	if board.is_checkmate():						   # check if checkmate
 		print("Game ended in a checkmate")
-	else:
+		if turn: # if white turn, board is in checkmate, black wins
+			return False
+		else:
+			return True
+	else:											   # stalemate case
 		print("Game ended in a stalemate")
-	if utility_score > 0:
+	# return game winner, if greater than zero, white wins
+	if utility_score > 0:								
 		return True
 	elif utility_score < 0:
 		return False
@@ -125,7 +130,7 @@ if __name__ == '__main__':
 
 	number_of_games = 3
 
-	white_depth = 2 # depth limit for white
+	white_depth = 1 # depth limit for white
 
 	black_depth = 4 # depth limit for black
 
