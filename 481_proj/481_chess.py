@@ -48,15 +48,17 @@ def find_next_best_move_example(ai, depth):
 		print(f"Elapsed time: {(end-start):.2f} seconds")
 	print() #nl for spacing
 
-
+# play game with two alpha beta search 
 def play_game(board, d1, d2):
-	p1 = chess_ai()
-	turn = True
-	move_count = 1
-	last_6 = []
+	p1 = chess_ai() # chess ai object
+	turn = True 	# turn tracker, true is white, false is black
+	move_count = 1	# track number of moves
 
+	last_6 = [] # tracks last 6 turns, 12 moves total for stalemate condtions
+
+	# stalemate condtions, if there are 4 repeat moves in a set of 12, the ai is at a stalemate
 	def check_stalemate(move):
-		repeat = 0
+		repeat = 0 # how many repeat moves
 		if len(last_6) != 12:
 			last_6.append(move)
 		else:
@@ -71,36 +73,35 @@ def play_game(board, d1, d2):
 							repeat += 1
 		return False
 
-
-	print(board)
-	while(board.is_stalemate() != True) and (board.is_checkmate() != True):
-		if turn:
-			p1.board = board
-			move = p1.alpha_beta_search_no_print(depth=d1)
-			board.push(move)
-			if check_stalemate(move=move):
+	# start of game loop
+	print(board) # inital print 
+	while(board.is_stalemate() != True) and (board.is_checkmate() != True): # break loop if normal stalemate or checkmate
+		if turn: # white turn
+			p1.board = board # set ai board to current game board
+			move = p1.alpha_beta_search_no_print(depth=d1) # search for next best move
+			board.push(move) # make best move
+			if check_stalemate(move=move): # break loop if stuck
 				break
-			# print(w_last_move)
-			# print(move)
-			# w_last_move = str(move)
-			# w_last_move = w_last_move[2:] + w_last_move[:2]
-			turn = False
-			print_board_replace(board)
-			#print("Turn: " + str(move_count))
+			turn = False # set turn to black
+			print_board_replace(board) # show move
+			move_count += 1	
+		else: # black turn
+			p1.board = board # set ai board to current game board
+			move = p1.alpha_beta_search_no_print(depth=d2) # search for next best move
+			board.push(move) # make best move
+			if check_stalemate(move=move): # break loop if stuck
+				break
+			turn = True # set turn to white
+			print_board_replace(board) # show move
 			move_count += 1
-		else:
-			p1.board = board
-			move = p1.alpha_beta_search_no_print(depth=d2)
-			# print(b_last_move)
-			# print(move)
-			board.push(move)
-			# b_last_move = str(move)
-			# b_last_move = b_last_move[2:] + b_last_move[:2]
-			turn = True
-			print_board_replace(board)
-			#print("Turn: " + str(move_count))
-			move_count += 1
+
 	utility_score = p1.current_utility_score(p1.board)
+	print(f'Utility Score: {utility_score}')
+	print(f'Number of moves: {move_count}')
+	if board.is_checkmate():
+		print("Game ended in a checkmate")
+	else:
+		print("Game ended in a stalemate")
 	if utility_score > 0:
 		return True
 	elif utility_score < 0:
@@ -117,12 +118,12 @@ if __name__ == '__main__':
 	kings_pawn_opening_setup(c_ai.board)
 
 	# find next best move for kings pawn opening
-	#find_next_best_move_example(c_ai, depth=4) # raising value above 5 will lead to slow compuation times
+	find_next_best_move_example(c_ai, depth=4) # raising value above 5 will lead to slow compuation times
 	
 
 	# Play Game
 
-	number_of_games = 5
+	number_of_games = 3
 
 	white_depth = 2 # depth limit for white
 
@@ -148,10 +149,3 @@ if __name__ == '__main__':
 	print(f'White won {white_wins} with a depth of {white_depth}')
 	print(f'Black won {black_wins} with a depth of {black_depth}')
 
-	# # # print()
-	# Play Game
-	# time.sleep(5)
-
-	# print("\nPlay Game depth 2 vs depth 4\n")
-	# c_ai.board.reset
-	# play_game(board=c_ai, d1=2,d2=4)
