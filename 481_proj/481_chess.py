@@ -49,7 +49,7 @@ def find_next_best_move_example(ai, depth):
 	print() #nl for spacing
 
 # play game with two alpha beta search 
-def play_game(board, d1, d2):
+def play_game(board, d1, d2, a1, a2):
 	p1 = chess_ai() # chess ai object
 	turn = True 	# turn tracker, true is white, false is black
 	move_count = 1	# track number of moves
@@ -114,6 +114,29 @@ def play_game(board, d1, d2):
 	else:
 		return None
 
+# loop through games as example
+def play_game_loop(number_of_games, white_depth, white_aggression, black_depth, black_aggression):
+	# track nubmer of wins
+	white_wins = 0
+	black_wins = 0
+
+	for i in range(0,number_of_games):
+		c_ai = chess_ai() # reliably reset board
+		print(f'\nGame {i+1}')
+		end_state = play_game(board=c_ai.board, d1=white_depth, d2=black_depth, a1=white_aggression, a2=black_aggression)
+		if end_state == True:
+			print("White higher utility score")
+			white_wins += 1
+		elif end_state == False:
+			print("Black higher utility score")
+			black_wins += 1
+		else:
+			print('Tie')
+	# print results
+	print()
+	print(f'White won {white_wins} with a depth of {white_depth}')
+	print(f'Black won {black_wins} with a depth of {black_depth}')
+
 if __name__ == '__main__':
 
 	# create the chess ai 
@@ -125,32 +148,14 @@ if __name__ == '__main__':
 	# find next best move for kings pawn opening
 	find_next_best_move_example(c_ai, depth=4) # raising value above 5 will lead to slow compuation times
 	
-
 	# Play Game
-
 	number_of_games = 3
 
 	white_depth = 1 # depth limit for white
+	white_aggression = 1 # how much does whtie value taking a piece, higher number means more trades
 
-	black_depth = 4 # depth limit for black
+	black_depth = 2 # depth limit for black
+	black_aggression = 1 # how much does black value taking a piece, higher number means more trades
 
-	white_wins = 0
-	black_wins = 0
-
-	for i in range(0,number_of_games):
-		c_ai = chess_ai() # reliably reset board
-		print(f'\nGame {i+1}')
-		end_state = play_game(board=c_ai.board, d1=white_depth,d2=black_depth)
-		if end_state == True:
-			print("White higher utility score")
-			white_wins += 1
-		elif end_state == False:
-			print("Black higher utility score")
-			black_wins += 1
-		else:
-			print('Tie')
-
-	print()
-	print(f'White won {white_wins} with a depth of {white_depth}')
-	print(f'Black won {black_wins} with a depth of {black_depth}')
+	play_game_loop(number_of_games=number_of_games, white_depth=white_depth, white_aggression=white_aggression, black_depth=black_depth,black_aggression=black_aggression)
 
