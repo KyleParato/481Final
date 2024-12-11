@@ -74,6 +74,10 @@ class chess_ai():
                                 util += x + 1
                             if x > -999 and x < 0:
                                 util += x -1
+                            if x == 1000:
+                                util += 10
+                            if x == -1000:
+                                util += -10
 
                         util += 1
             pass

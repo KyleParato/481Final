@@ -67,7 +67,7 @@ def play_game(board, d1, d2):
 			print_board_replace(board)
 			#print("Turn: " + str(move_count))
 			move_count += 1
-	return 
+	return turn
 
 if __name__ == '__main__':
 
@@ -86,17 +86,17 @@ if __name__ == '__main__':
 	# # print("\nOriginal Board")
 	# # print(c_ai.board)
 
-	for d in range(1,6):
-		print("\nBest Move depth " + str(d) + "\n")
-		start = time.time()
-		print(f"\nBest move: " + str(c_ai.alpha_beta_search(depth=d)))
-		end = time.time()
-		print(f"Elapsed time: {(end-start):.2f} seconds")
+	# for d in range(1,6):
+	# 	print("\nBest Move depth " + str(d) + "\n")
+	# 	start = time.time()
+	# 	print(f"\nBest move: " + str(c_ai.alpha_beta_search(depth=d)))
+	# 	end = time.time()
+	# 	print(f"Elapsed time: {(end-start):.2f} seconds")
 
 	# # # print()
 	# Play Game
 	# time.sleep(5)
 
-	# print("\nPlay Game depth 2 vs depth 4\n")
-	# c_ai.board.reset
-	# play_game(board=c_ai, d1=2,d2=4)
+	print("\nPlay Game depth 2 vs depth 4\n")
+	c_ai.board.reset
+	play_game(board=c_ai, d1=2,d2=4)
