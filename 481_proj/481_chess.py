@@ -166,20 +166,18 @@ def play_game_loop(number_of_games, white_depth, white_aggression, black_depth, 
 	print(f'Black won {black_wins} with a depth of {black_depth}')
 
 
-# create data
+# generate game data, testing different aggression motivations
 def game_data(up_to):
-	for i in range(3,up_to+1):
-		for ii in range(1, up_to+1):
-			file_name = f'/game_data/game_data_{i}_{ii}.txt'
-			path = "/game_data/"
-			#name = os.path.join(os.getcwd(), file_name)
-			name = os.getcwd() + file_name
-			stdout = sys.stdout
-			print(f'Writing {i}_{ii}')
-			sys.stdout = open(name, "w")
-			play_game_loop(number_of_games=100,white_depth=i,black_depth=ii,white_aggression=1,black_aggression=1,print_board=False)
-			sys.stdout.close()
-			sys.stdout = stdout
+	for i in range(1,up_to+1): # depth of white
+		for ii in range(1, up_to+1): # depth of black
+			file_name = f'/game_data/game_data_{i}_{ii}.txt' # generate file name
+			name = os.getcwd() + file_name 	# generate filename
+			stdout = sys.stdout				# save location of stdout
+			print(f'Writing {i}_{ii}')		# print current filename
+			sys.stdout = open(name, "w")	# set stdout to file
+			play_game_loop(number_of_games=100,white_depth=i,black_depth=ii,white_aggression=1,black_aggression=1,print_board=False) # play 100 games
+			sys.stdout.close()  # close file
+			sys.stdout = stdout # reset stdout
 
 if __name__ == '__main__':
 
@@ -193,7 +191,7 @@ if __name__ == '__main__':
 	find_next_best_move_example(c_ai, depth=4) # raising value above 5 will lead to slow compuation times
 	
 	# Play Game
-	number_of_games = 100
+	number_of_games = 4
 
 	white_depth = 1 # depth limit for white
 	black_depth = 2 # depth limit for black
@@ -201,7 +199,8 @@ if __name__ == '__main__':
 	white_aggression = 1 # how much does whtie value taking a piece, higher number means more trades
 	black_aggression = 1 # how much does black value taking a piece, higher number means more trades
 
-	#play_game_loop(number_of_games=number_of_games, white_depth=white_depth, white_aggression=white_aggression, black_depth=black_depth,black_aggression=black_aggression, print_board=False)
+	# game loop with increasing aggression
+	play_game_loop(number_of_games=number_of_games, white_depth=white_depth, white_aggression=white_aggression, black_depth=black_depth,black_aggression=black_aggression, print_board=False)
 	
-	
+	# generate game data
 	game_data(3)
