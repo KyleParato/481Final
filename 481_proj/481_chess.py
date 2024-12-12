@@ -193,14 +193,14 @@ if __name__ == '__main__':
 	# Play Game
 	number_of_games = 4
 
-	white_depth = 1 # depth limit for white
-	black_depth = 2 # depth limit for black
+	white_depth = 2 # depth limit for white
+	black_depth = 3 # depth limit for black
 
 	white_aggression = 1 # how much does whtie value taking a piece, higher number means more trades
 	black_aggression = 1 # how much does black value taking a piece, higher number means more trades
 
 	# game loop with increasing aggression
-	play_game_loop(number_of_games=number_of_games, white_depth=white_depth, white_aggression=white_aggression, black_depth=black_depth,black_aggression=black_aggression, print_board=False)
+	play_game_loop(number_of_games=number_of_games, white_depth=white_depth, white_aggression=white_aggression, black_depth=black_depth,black_aggression=black_aggression, print_board=True)
 	
 	# generate game data
-	game_data(3)
+	#game_data(3) # uncomment for regeneration of game_data
