@@ -43,7 +43,7 @@ def find_next_best_move_example(ai, depth):
 	for d in range(1,depth+1):
 		print("\nBest Move depth " + str(d) + "\n")
 		start = time.time()
-		print(f"\nBest move: " + str(c_ai.alpha_beta_search(depth=d)))
+		print(f"\nBest move: " + str(c_ai.alpha_beta_search(depth=d,print_board=True)))
 		end = time.time()
 		print(f"Elapsed time: {(end-start):.2f} seconds")
 	print() #nl for spacing
@@ -78,7 +78,7 @@ def play_game(board, d1, d2, a1, a2):
 	while(board.is_stalemate() != True) and (board.is_checkmate() != True): # break loop if normal stalemate or checkmate
 		if turn: # white turn
 			p1.board = board # set ai board to current game board
-			move = p1.alpha_beta_search_no_print(depth=d1) # search for next best move
+			move = p1.alpha_beta_search(depth=d1) # search for next best move
 			board.push(move) # make best move
 			if check_stalemate(move=move): # break loop if stuck
 				break
@@ -87,7 +87,7 @@ def play_game(board, d1, d2, a1, a2):
 			move_count += 1	
 		else: # black turn
 			p1.board = board # set ai board to current game board
-			move = p1.alpha_beta_search_no_print(depth=d2) # search for next best move
+			move = p1.alpha_beta_search(depth=d2) # search for next best move
 			board.push(move) # make best move
 			if check_stalemate(move=move): # break loop if stuck
 				break
@@ -151,10 +151,10 @@ if __name__ == '__main__':
 	# Play Game
 	number_of_games = 3
 
-	white_depth = 1 # depth limit for white
+	white_depth = 2 # depth limit for white
 	white_aggression = 1 # how much does whtie value taking a piece, higher number means more trades
 
-	black_depth = 2 # depth limit for black
+	black_depth = 4 # depth limit for black
 	black_aggression = 1 # how much does black value taking a piece, higher number means more trades
 
 	play_game_loop(number_of_games=number_of_games, white_depth=white_depth, white_aggression=white_aggression, black_depth=black_depth,black_aggression=black_aggression)
