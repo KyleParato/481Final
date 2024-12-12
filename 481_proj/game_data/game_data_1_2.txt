@@ -1,0 +1,1503 @@
+
+Game 1
+. r b q k r . .
+. p p p b p p .
+. . n . . n . p
+. . . . p . . .
+p . . . . . P .
+. . N . . . R N
+P P P P P P . P
+. R B Q K B . .
+Utility Score: -50
+Number of moves: 25
+Game ended in a stalemate
+White aggression motivation: 1
+Black higher utility score
+
+Game 2
+b r . q . b . .
+. . p p k . . .
+. . n . . p K .
+p . . . . . . .
+P q . . . . . .
+. p . . . . p .
+. . . . . . P .
+. . . . q . . .
+Utility Score: -181
+Number of moves: 75
+Game ended in a stalemate
+Black aggression motivation: 1
+Black higher utility score
+
+Game 3
+. . . r q b . .
+p p p b k p . p
+. . n . r . . .
+. . . p p p . .
+. . . . P . . .
+. . . . . . N .
+P P P P N P P P
+. R B . K B . R
+Utility Score: -84
+Number of moves: 29
+Game ended in a stalemate
+White aggression motivation: 2
+Black higher utility score
+
+Game 4
+. n . r . . . .
+p . p k r p . p
+. . b . . b . .
+p . . . . . . .
+. . . P . . . .
+P . P . . . K q
+. . . . . . . .
+. . . . . q . .
+Utility Score: -143
+Number of moves: 89
+Game ended in a checkmate
+Black aggression motivation: 2
+Black higher utility score
+
+Game 5
+b . . r k . r .
+p . p . . p . p
+p . n p . n . p
+. . . p . . . .
+P . P P q P P P
+. . . . . . . .
+P . . . . K . .
+R N . . . . N .
+Utility Score: -84
+Number of moves: 40
+Game ended in a stalemate
+White aggression motivation: 3
+Black higher utility score
+
+Game 6
+. r . q k r . .
+p . p b b p . .
+p . . n . P . .
+. . . . . . . P
+. . . . . p . .
+. . . . . . p .
+P P . N . . K .
+R . . . . . . .
+Utility Score: -112
+Number of moves: 63
+Game ended in a stalemate
+Black aggression motivation: 3
+Black higher utility score
+
+Game 7
+r n b q . . r .
+p p . k . p P .
+. . . . . . . .
+b . . P . . N .
+. . . p . . . .
+. . . . . . . .
+P P P . . . . .
+R N . K . q . .
+Utility Score: -97
+Number of moves: 45
+Game ended in a checkmate
+White aggression motivation: 4
+Black higher utility score
+
+Game 8
+r n b . q . . r
+p . . k . p p .
+B . . . . n p .
+. . p . P . N .
+. . p P . . . P
+. . . . q . . .
+P P . . . b K .
+R N . . . . . .
+Utility Score: -109
+Number of moves: 51
+Game ended in a stalemate
+Black aggression motivation: 4
+Black higher utility score
+
+Game 9
+B n b . q . . .
+p . . k r . . .
+. . . . . . . .
+. . . p n p N .
+P b . p . . . .
+. . . . . . . .
+. P P . K . P P
+. N . . . . . .
+Utility Score: -100
+Number of moves: 54
+Game ended in a stalemate
+White aggression motivation: 5
+Black higher utility score
+
+Game 10
+. n b q . . . .
+. r . k . r . .
+. P . . . P . .
+. . P . p . . p
+p . p . P . p b
+. . . . . . R .
+. P P N . . P P
+. . . . K . N R
+Utility Score: -65
+Number of moves: 59
+Game ended in a stalemate
+Black aggression motivation: 5
+Black higher utility score
+
+Game 11
+. n b q . . . .
+. p . k . p . .
+. P . . . . . .
+r . . . . . . .
+P . p . p . p .
+. . P . p . . .
+. . . . . . P P
+. . . . K . N R
+Utility Score: -53
+Number of moves: 53
+Game ended in a stalemate
+White aggression motivation: 6
+Black higher utility score
+
+Game 12
+r n b q . . . .
+p . . k . p . .
+. . . . . . . .
+. p P . p p . .
+P . . r . . P P
+. R p . . R . .
+. . P . N . . .
+. . . . K . . .
+Utility Score: -69
+Number of moves: 57
+Game ended in a stalemate
+Black aggression motivation: 6
+Black higher utility score
+
+Game 13
+. . b . . . . .
+. . . . r . . .
+. . . . k . . .
+. . . . P . . .
+p p p . . . R .
+. . . . . . p .
+N . P . . . P .
+. . . . K N . .
+Utility Score: -20
+Number of moves: 70
+Game ended in a stalemate
+White aggression motivation: 7
+Black higher utility score
+
+Game 14
+. n b q . . r .
+. p . k . p B p
+. p . . p . . .
+. . . . . . . .
+p . p P P P P .
+. . P . . . . r
+P . . . . . . P
+R N . . K . N R
+Utility Score: -58
+Number of moves: 37
+Game ended in a stalemate
+Black aggression motivation: 7
+Black higher utility score
+
+Game 15
+. n b q . . r .
+. p . k . p B p
+. p . . p . . .
+. . . . . . . .
+p . p P P P . .
+. . P . . . . .
+P r . . . . P P
+R N . . K . N R
+Utility Score: -52
+Number of moves: 35
+Game ended in a stalemate
+White aggression motivation: 8
+Black higher utility score
+
+Game 16
+. n b q . . r .
+. p . k . p B p
+. p . . p . . .
+. . . . . . . .
+p . p P P P . .
+. . P . . . . .
+P r . . . . P P
+R N . . K . N R
+Utility Score: -52
+Number of moves: 35
+Game ended in a stalemate
+Black aggression motivation: 8
+Black higher utility score
+
+Game 17
+. n b . q . . .
+. p p k . p . p
+. p . . . p . .
+. . . . . . . .
+. . p P P p r .
+r . P . . . . .
+P . . . . . P P
+R N . . K . N R
+Utility Score: -53
+Number of moves: 33
+Game ended in a stalemate
+White aggression motivation: 9
+Black higher utility score
+
+Game 18
+r n b . . . . .
+p . p k . . r p
+B . . . . p . p
+. . . . . . . .
+. . p P . . q P
+. . . . . . . N
+P P K . . b P .
+R N . . . . . R
+Utility Score: -54
+Number of moves: 39
+Game ended in a stalemate
+Black aggression motivation: 9
+Black higher utility score
+
+Game 19
+r n b . . . . .
+p . p k . . r p
+B . . . . p . p
+. . . . . . . .
+. . p P . . q P
+. . . . . . . N
+P P K . . b P .
+R N . . . . . R
+Utility Score: -54
+Number of moves: 39
+Game ended in a stalemate
+White aggression motivation: 10
+Black higher utility score
+
+Game 20
+r n b . . . . .
+p . p k . . r p
+B . . . . p . p
+. . . . . . . .
+. . p P . . q P
+. . . . . . . N
+P P K . . b P .
+R N . . . . . R
+Utility Score: -54
+Number of moves: 39
+Game ended in a stalemate
+Black aggression motivation: 10
+Black higher utility score
+
+Game 21
+r n b . . . . .
+p . p k . . r p
+B . . . . p . p
+. . . . . . . .
+. . p P . . q P
+. . . . . . . N
+P P K . . b P .
+R N . . . . . R
+Utility Score: -54
+Number of moves: 39
+Game ended in a stalemate
+White aggression motivation: 11
+Black higher utility score
+
+Game 22
+r n b . . . . .
+p . p k . . r p
+B . . . . p . p
+. . . . . . . .
+. . p P . . q P
+. . . . . . . N
+P P K . . b P .
+R N . . . . . R
+Utility Score: -54
+Number of moves: 39
+Game ended in a stalemate
+Black aggression motivation: 11
+Black higher utility score
+
+Game 23
+r n b . . . . .
+p . p k . . r p
+B . . . . p . p
+. . . . . . . .
+. . p P . . q P
+. . . . . . . N
+P P K . . b P .
+R N . . . . . R
+Utility Score: -54
+Number of moves: 39
+Game ended in a stalemate
+White aggression motivation: 12
+Black higher utility score
+
+Game 24
+r n b . . . . .
+p . p k . . r p
+B . . . . p . p
+. . . . . . . .
+. . p P . . q P
+. . . . . . . N
+P P K . . b P .
+R N . . . . . R
+Utility Score: -54
+Number of moves: 39
+Game ended in a stalemate
+Black aggression motivation: 12
+Black higher utility score
+
+Game 25
+r n b . . . . .
+p . p k . . r p
+B . . . . p . p
+. . . . . . . .
+. . p P . . q P
+. . . . . . . N
+P P K . . b P .
+R N . . . . . R
+Utility Score: -54
+Number of moves: 39
+Game ended in a stalemate
+White aggression motivation: 13
+Black higher utility score
+
+Game 26
+r n b . . . . .
+p . p k . . r p
+B . . . . p . p
+. . . . . . . .
+. . p P . . q P
+. . . . . . . N
+P P K . . b P .
+R N . . . . . R
+Utility Score: -54
+Number of moves: 39
+Game ended in a stalemate
+Black aggression motivation: 13
+Black higher utility score
+
+Game 27
+r n b . . . . .
+p . p k . . r p
+B . . . . p . p
+. . . . . . . .
+. . p P . . q P
+. . . . . . . N
+P P K . . b P .
+R N . . . . . R
+Utility Score: -54
+Number of moves: 39
+Game ended in a stalemate
+White aggression motivation: 14
+Black higher utility score
+
+Game 28
+r n b . . . . .
+p . p k . . r p
+B . . . . p . p
+. . . . . . . .
+. . p P . . q P
+. . . . . . . N
+P P K . . b P .
+R N . . . . . R
+Utility Score: -54
+Number of moves: 39
+Game ended in a stalemate
+Black aggression motivation: 14
+Black higher utility score
+
+Game 29
+. n b . q . . .
+. . p k . . r .
+. p . . . . . p
+. P . p P . . .
+. b . p . . P P
+. . . K . . . R
+. . P . . P . .
+. . . . r . N .
+Utility Score: -89
+Number of moves: 49
+Game ended in a stalemate
+White aggression motivation: 15
+Black higher utility score
+
+Game 30
+. n b . q . . .
+. . p k . . r .
+. p . . . . . p
+. P . p P . . .
+. b . p . . P P
+. . . K . . . R
+. . P . . P . .
+. . . . r . N .
+Utility Score: -89
+Number of moves: 49
+Game ended in a stalemate
+Black aggression motivation: 15
+Black higher utility score
+
+Game 31
+. n b . q . . .
+. . p k . . r .
+. p . . . . . p
+. P . p P . . .
+. b . p . . P P
+. . . K . . . R
+. . P . . P . .
+. . . . r . N .
+Utility Score: -89
+Number of moves: 49
+Game ended in a stalemate
+White aggression motivation: 16
+Black higher utility score
+
+Game 32
+. n b . q . . .
+. . p k . . r .
+. p . . . . . p
+. P . p P . . .
+. b . p . . P P
+. . . . . . . R
+. . P . K P . .
+. . . . r . N .
+Utility Score: -93
+Number of moves: 41
+White forfeit
+Black aggression motivation: 16
+Black higher utility score
+
+Game 33
+. n b . q . . .
+. . p k . . r .
+. p . . . . . p
+. P . p P . . .
+. b . p . . P P
+. . . . . . . R
+. . P . K P . .
+. . . . r . N .
+Utility Score: -93
+Number of moves: 41
+White forfeit
+White aggression motivation: 17
+Black higher utility score
+
+Game 34
+. n b . q . . .
+. . p k . . r .
+. p . . . . . p
+. P . p P . . .
+. b . p . . P P
+. . . . . . . R
+. . P . K P . .
+. . . . r . N .
+Utility Score: -93
+Number of moves: 41
+White forfeit
+Black aggression motivation: 17
+Black higher utility score
+
+Game 35
+. n b . q . . .
+. . p k . . r .
+. p . . . . . p
+. P . p P . . .
+. b . p . . P P
+. . . . . . . R
+. . P . K P . .
+. . . . r . N .
+Utility Score: -93
+Number of moves: 41
+White forfeit
+White aggression motivation: 18
+Black higher utility score
+
+Game 36
+. n b . q . . .
+. . p k . . r .
+. p . . . . . p
+. P . p P . . .
+. b . p . . P P
+. . . . . . . R
+. . P . K P . .
+. . . . r . N .
+Utility Score: -93
+Number of moves: 41
+White forfeit
+Black aggression motivation: 18
+Black higher utility score
+
+Game 37
+. n b . q . . .
+. . p k . . r .
+. p . . . . . p
+. P . p P . . .
+. b . p . . P P
+. . . . . . . R
+. . P . K P . .
+. . . . r . N .
+Utility Score: -93
+Number of moves: 41
+White forfeit
+White aggression motivation: 19
+Black higher utility score
+
+Game 38
+. n b . q . . .
+. . p k . . r .
+. p . . . . . p
+. P . p P . . .
+. b . p . . P P
+. . . . . . . R
+. . P . . P . .
+. r . K . . N .
+Utility Score: -79
+Number of moves: 39
+White forfeit
+Black aggression motivation: 19
+Black higher utility score
+
+Game 39
+. n b . q . . .
+. . p k . . r .
+. p . . . . . p
+. P . p P . . .
+. b . p . . P P
+. . . . . . . R
+. . P . . P . .
+. r . K . . N .
+Utility Score: -79
+Number of moves: 39
+White forfeit
+White aggression motivation: 20
+Black higher utility score
+
+Game 40
+. n b . q . . .
+. . p k . . r .
+. p . . . . . p
+. P . p P . . .
+. b . p . . P P
+. . . . . . . R
+. . P . . P . .
+. r . K . . N .
+Utility Score: -79
+Number of moves: 39
+White forfeit
+Black aggression motivation: 20
+Black higher utility score
+
+Game 41
+. n b . . . . .
+. . . k . r . .
+. p . . . . . p
+. P . . P . . .
+. . p . p . . .
+. . P . . . . .
+B . P . . P P P
+. . . K . . N R
+Utility Score: -27
+Number of moves: 48
+Game ended in a stalemate
+White aggression motivation: 21
+Black higher utility score
+
+Game 42
+. n b . . . . .
+. . . k . r . .
+. p . . . . . p
+. P . . P . . .
+. . p . p . . .
+. . P . . . . .
+B . P . . P P P
+. . . K . . N R
+Utility Score: -27
+Number of moves: 48
+Game ended in a stalemate
+Black aggression motivation: 21
+Black higher utility score
+
+Game 43
+. n b . . . . .
+. . . k . r . .
+. p . . . . . p
+. P . . P . . .
+. . p . p . . .
+. . P . . . . .
+B . P . . P P P
+. . . K . . N R
+Utility Score: -27
+Number of moves: 48
+Game ended in a stalemate
+White aggression motivation: 22
+Black higher utility score
+
+Game 44
+. n b . . . . .
+. . . k . r . .
+. p . . . . . p
+. P . . P . . .
+. . p . p . . .
+. . P . . . . .
+B . P . . P P P
+. . . K . . N R
+Utility Score: -27
+Number of moves: 48
+Game ended in a stalemate
+Black aggression motivation: 22
+Black higher utility score
+
+Game 45
+. n b . . . . .
+. . . k . r . .
+. p . . . . . p
+. P . . P . . .
+. . p . p . . .
+. . P . . . . .
+B . P . . P P P
+. . . K . . N R
+Utility Score: -27
+Number of moves: 48
+Game ended in a stalemate
+White aggression motivation: 23
+Black higher utility score
+
+Game 46
+. n b . . . . .
+. . . k . r . .
+. p . . . . . p
+. P . . P . . .
+. . p . p . . .
+. . P . . . . .
+B . P . . P P P
+. . . K . . N R
+Utility Score: -27
+Number of moves: 48
+Game ended in a stalemate
+Black aggression motivation: 23
+Black higher utility score
+
+Game 47
+. n b . . . . .
+. . . k . r . .
+. p . . . . . p
+. P . . P . . .
+. . p . p . . .
+. . P . . . . .
+B . P . . P P P
+. . . K . . N R
+Utility Score: -27
+Number of moves: 48
+Game ended in a stalemate
+White aggression motivation: 24
+Black higher utility score
+
+Game 48
+. n b q . . . .
+. . p k . . r .
+. p . . . . . p
+. P . p p . . .
+. b B P P . . .
+. . . . . . . .
+. P P . . P P P
+r N . K . . N R
+Utility Score: -57
+Number of moves: 29
+White forfeit
+Black aggression motivation: 24
+Black higher utility score
+
+Game 49
+. n b q . . . .
+. . p k . . r .
+. p . . . . . p
+. P . p p . . .
+. b B P P . . .
+. . . . . . . .
+r P P . . P P P
+R N . K . . N R
+Utility Score: -56
+Number of moves: 29
+White forfeit
+White aggression motivation: 25
+Black higher utility score
+
+Game 50
+r n b q . . . .
+. . p k . r B p
+. p . . . . . .
+. p . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N . K . . N R
+Utility Score: -48
+Number of moves: 21
+White forfeit
+Black aggression motivation: 25
+Black higher utility score
+
+Game 51
+r n b q . . . .
+. . p k . r B p
+. p . . . . . .
+. p . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N . K . . N R
+Utility Score: -48
+Number of moves: 21
+White forfeit
+White aggression motivation: 26
+Black higher utility score
+
+Game 52
+r n b q . . . .
+. . p k . r B p
+. p . . . . . .
+. p . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N . K . . N R
+Utility Score: -48
+Number of moves: 21
+White forfeit
+Black aggression motivation: 26
+Black higher utility score
+
+Game 53
+r n b q . . . .
+. . p k . r B p
+. p . . . . . .
+. p . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N . K . . N R
+Utility Score: -48
+Number of moves: 21
+White forfeit
+White aggression motivation: 27
+Black higher utility score
+
+Game 54
+r n b q . . . .
+. . p k . r B p
+. p . . . . . .
+. p . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N . K . . N R
+Utility Score: -48
+Number of moves: 21
+White forfeit
+Black aggression motivation: 27
+Black higher utility score
+
+Game 55
+r n b q . . . .
+. . p k . r B p
+. p . . . . . .
+. p . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N . K . . N R
+Utility Score: -48
+Number of moves: 21
+White forfeit
+White aggression motivation: 28
+Black higher utility score
+
+Game 56
+r n b q . . . .
+. . p k . r B p
+. p . . . . . .
+. p . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N . K . . N R
+Utility Score: -48
+Number of moves: 21
+White forfeit
+Black aggression motivation: 28
+Black higher utility score
+
+Game 57
+r n b q . . . .
+. . p k . r B p
+. p . . . . . .
+. p . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N . K . . N R
+Utility Score: -48
+Number of moves: 21
+White forfeit
+White aggression motivation: 29
+Black higher utility score
+
+Game 58
+r n b q . . . .
+. . p k . r B p
+. p . . . . . .
+. p . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N . K . . N R
+Utility Score: -48
+Number of moves: 21
+White forfeit
+Black aggression motivation: 29
+Black higher utility score
+
+Game 59
+r n b q . . . .
+. . p k . r B p
+. p . . . . . .
+. p . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N . K . . N R
+Utility Score: -48
+Number of moves: 21
+White forfeit
+White aggression motivation: 30
+Black higher utility score
+
+Game 60
+r n b q . . . .
+. . p k . r B p
+. p . . . . . .
+. p . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N . K . . N R
+Utility Score: -48
+Number of moves: 21
+White forfeit
+Black aggression motivation: 30
+Black higher utility score
+
+Game 61
+r n b q . . . .
+. . p k . r B p
+. p . . . . . .
+. p . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N . K . . N R
+Utility Score: -48
+Number of moves: 21
+White forfeit
+White aggression motivation: 31
+Black higher utility score
+
+Game 62
+r n b q . . . .
+. . p k . r B p
+. p . . . . . .
+. p . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N . K . . N R
+Utility Score: -48
+Number of moves: 21
+White forfeit
+Black aggression motivation: 31
+Black higher utility score
+
+Game 63
+r n b q . . . .
+. . p k . r B p
+. p . . . . . .
+. p . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N . K . . N R
+Utility Score: -48
+Number of moves: 21
+White forfeit
+White aggression motivation: 32
+Black higher utility score
+
+Game 64
+r n b q . . . .
+. . p k . r B p
+. p . . . . . .
+. p . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N . K . . N R
+Utility Score: -48
+Number of moves: 21
+White forfeit
+Black aggression motivation: 32
+Black higher utility score
+
+Game 65
+r n b q . . . .
+. . p k . r B p
+. p . . . . . .
+. p . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N . K . . N R
+Utility Score: -48
+Number of moves: 21
+White forfeit
+White aggression motivation: 33
+Black higher utility score
+
+Game 66
+r n b q . . . .
+. . p k . r B p
+. p . . . . . .
+. p . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N . K . . N R
+Utility Score: -48
+Number of moves: 21
+White forfeit
+Black aggression motivation: 33
+Black higher utility score
+
+Game 67
+r n b q . . . .
+. . p k . r B p
+. p . . . . . .
+. p . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N . K . . N R
+Utility Score: -48
+Number of moves: 21
+White forfeit
+White aggression motivation: 34
+Black higher utility score
+
+Game 68
+r n b q . . . .
+. . p k . r B p
+. p . . . . . .
+. p . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N . K . . N R
+Utility Score: -48
+Number of moves: 21
+White forfeit
+Black aggression motivation: 34
+Black higher utility score
+
+Game 69
+r n b q . . . .
+. . p k . r B p
+. p . . . . . .
+. p . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N . K . . N R
+Utility Score: -48
+Number of moves: 21
+White forfeit
+White aggression motivation: 35
+Black higher utility score
+
+Game 70
+r n b q . . . .
+. . p k . r B p
+. p . . . . . .
+. p . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N . K . . N R
+Utility Score: -48
+Number of moves: 21
+White forfeit
+Black aggression motivation: 35
+Black higher utility score
+
+Game 71
+r n b q . . . .
+. . p k . r B p
+. p . . . . . .
+. p . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N . K . . N R
+Utility Score: -48
+Number of moves: 21
+White forfeit
+White aggression motivation: 36
+Black higher utility score
+
+Game 72
+r n b q . . . r
+p p p k . . p p
+. . . . . Q . .
+. . . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K . N R
+Utility Score: -48
+Number of moves: 13
+White forfeit
+Black aggression motivation: 36
+Black higher utility score
+
+Game 73
+r n b q . . . r
+p p p k . . p p
+. . . . . Q . .
+. . . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K . N R
+Utility Score: -48
+Number of moves: 13
+White forfeit
+White aggression motivation: 37
+Black higher utility score
+
+Game 74
+r n b q . . . r
+p p p k . . p p
+. . . . . Q . .
+. . . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K . N R
+Utility Score: -48
+Number of moves: 13
+White forfeit
+Black aggression motivation: 37
+Black higher utility score
+
+Game 75
+r n b q . . . r
+p p p k . . p p
+. . . . . Q . .
+. . . p p . . .
+. b B P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K . N R
+Utility Score: -48
+Number of moves: 13
+White forfeit
+White aggression motivation: 38
+Black higher utility score
+
+Game 76
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+Black aggression motivation: 38
+Black higher utility score
+
+Game 77
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+White aggression motivation: 39
+Black higher utility score
+
+Game 78
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+Black aggression motivation: 39
+Black higher utility score
+
+Game 79
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+White aggression motivation: 40
+Black higher utility score
+
+Game 80
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+Black aggression motivation: 40
+Black higher utility score
+
+Game 81
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+White aggression motivation: 41
+Black higher utility score
+
+Game 82
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+Black aggression motivation: 41
+Black higher utility score
+
+Game 83
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+White aggression motivation: 42
+Black higher utility score
+
+Game 84
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+Black aggression motivation: 42
+Black higher utility score
+
+Game 85
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+White aggression motivation: 43
+Black higher utility score
+
+Game 86
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+Black aggression motivation: 43
+Black higher utility score
+
+Game 87
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+White aggression motivation: 44
+Black higher utility score
+
+Game 88
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+Black aggression motivation: 44
+Black higher utility score
+
+Game 89
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+White aggression motivation: 45
+Black higher utility score
+
+Game 90
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+Black aggression motivation: 45
+Black higher utility score
+
+Game 91
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+White aggression motivation: 46
+Black higher utility score
+
+Game 92
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+Black aggression motivation: 46
+Black higher utility score
+
+Game 93
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+White aggression motivation: 47
+Black higher utility score
+
+Game 94
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+Black aggression motivation: 47
+Black higher utility score
+
+Game 95
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+White aggression motivation: 48
+Black higher utility score
+
+Game 96
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+Black aggression motivation: 48
+Black higher utility score
+
+Game 97
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+White aggression motivation: 49
+Black higher utility score
+
+Game 98
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+Black aggression motivation: 49
+Black higher utility score
+
+Game 99
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+White aggression motivation: 50
+Black higher utility score
+
+Game 100
+r n b q . b . r
+p p p k p p p p
+. . . p . n . .
+. . . . . . . Q
+. . . P P . . .
+. . . . . . . .
+P P P . . P P P
+R N B . K B N R
+Utility Score: -48
+Number of moves: 7
+White forfeit
+Black aggression motivation: 50
+Black higher utility score
+
+White won 0 with a depth of 1
+Black won 100 with a depth of 2

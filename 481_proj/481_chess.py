@@ -1,4 +1,5 @@
-import chess
+import os
+import sys
 import time
 from chess_ai import *
 
@@ -59,13 +60,13 @@ def play_game(board, d1, d2, a1, a2, print_board=False):
 	# stalemate condtions, if there are 4 repeat moves in a set of 12, the ai is at a stalemate
 	def check_stalemate(move):
 		repeat = 0 # how many repeat moves
-		if len(last_6) != 12:
+		if len(last_6) != 24:
 			last_6.append(move)
 		else:
 			last_6.pop(0)
 			last_6.append(move)
-			for i in range(0,12):
-				for ii in range(i+1,12):
+			for i in range(0,24):
+				for ii in range(i+1,24):
 					if last_6[i] == last_6[ii]:
 						if repeat > 4:
 							return True
@@ -144,11 +145,11 @@ def play_game_loop(number_of_games, white_depth, white_aggression, black_depth, 
 		c_ai = chess_ai() # reliably reset board
 		print(f'\nGame {i+1}')
 		if i % 2 == 0:
-			end_state = play_game(board=c_ai.board, d1=white_depth, d2=black_depth, a1=white_aggression+i, a2=black_aggression, print_board=print_board)
+			end_state = play_game(board=c_ai.board, d1=white_depth, d2=black_depth, a1=white_aggression+white_aggression_addition, a2=black_aggression+black_aggression_addition, print_board=print_board)
 			print(f'White aggression motivation: {white_aggression+white_aggression_addition}')
 			white_aggression_addition += 1
 		else:
-			end_state = play_game(board=c_ai.board, d1=white_depth, d2=black_depth, a1=white_aggression, a2=black_aggression+i, print_board=print_board)
+			end_state = play_game(board=c_ai.board, d1=white_depth, d2=black_depth, a1=white_aggression+white_aggression_addition, a2=black_aggression+black_aggression_addition, print_board=print_board)
 			print(f'Black aggression motivation: {black_aggression+black_aggression_addition}')
 			black_aggression_addition += 1
 		if end_state == True:
@@ -165,6 +166,21 @@ def play_game_loop(number_of_games, white_depth, white_aggression, black_depth, 
 	print(f'Black won {black_wins} with a depth of {black_depth}')
 
 
+# create data
+def game_data(up_to):
+	for i in range(3,up_to+1):
+		for ii in range(1, up_to+1):
+			file_name = f'/game_data/game_data_{i}_{ii}.txt'
+			path = "/game_data/"
+			#name = os.path.join(os.getcwd(), file_name)
+			name = os.getcwd() + file_name
+			stdout = sys.stdout
+			print(f'Writing {i}_{ii}')
+			sys.stdout = open(name, "w")
+			play_game_loop(number_of_games=100,white_depth=i,black_depth=ii,white_aggression=1,black_aggression=1,print_board=False)
+			sys.stdout.close()
+			sys.stdout = stdout
+
 if __name__ == '__main__':
 
 	# create the chess ai 
@@ -174,7 +190,7 @@ if __name__ == '__main__':
 	kings_pawn_opening_setup(c_ai.board)
 
 	# find next best move for kings pawn opening
-	#find_next_best_move_example(c_ai, depth=4) # raising value above 5 will lead to slow compuation times
+	find_next_best_move_example(c_ai, depth=4) # raising value above 5 will lead to slow compuation times
 	
 	# Play Game
 	number_of_games = 100
@@ -185,4 +201,7 @@ if __name__ == '__main__':
 	white_aggression = 1 # how much does whtie value taking a piece, higher number means more trades
 	black_aggression = 1 # how much does black value taking a piece, higher number means more trades
 
-	play_game_loop(number_of_games=number_of_games, white_depth=white_depth, white_aggression=white_aggression, black_depth=black_depth,black_aggression=black_aggression, print_board=False)
+	#play_game_loop(number_of_games=number_of_games, white_depth=white_depth, white_aggression=white_aggression, black_depth=black_depth,black_aggression=black_aggression, print_board=False)
+	
+	
+	game_data(3)
