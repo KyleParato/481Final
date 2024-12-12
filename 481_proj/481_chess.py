@@ -203,4 +203,4 @@ if __name__ == '__main__':
 	play_game_loop(number_of_games=number_of_games, white_depth=white_depth, white_aggression=white_aggression, black_depth=black_depth,black_aggression=black_aggression, print_board=True)
 	
 	# generate game data
-	#game_data(3) # uncomment for regeneration of game_data
+	#game_data(1) # uncomment for regeneration of game_data

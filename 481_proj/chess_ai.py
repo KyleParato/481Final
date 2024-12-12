@@ -70,13 +70,13 @@ class chess_ai():
                             piece = str(board.piece_at(squares[a]))
                             x = material_cost(piece) # get piece material cost
                             if x < 999 and x > 0: # if not white king, add material cost + motivation
-                                util += x - aggression_motivaion
+                                util += -x - aggression_motivaion
                             if x > -999 and x < 0: # if not black king, add material cost - motivation
-                                util += x + aggression_motivaion
+                                util += -x + aggression_motivaion
                             if x == 1000: # if white king, add motivation factor * 10, adding util breaks ai
                                 util -= (aggression_motivaion*10)
                             if x == -1000: # if black king
-                                util += -(aggression_motivaion*10)
+                                util += aggression_motivaion*10
         return util
 
     # if no more legal moves
