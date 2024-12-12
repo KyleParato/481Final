@@ -78,7 +78,7 @@ def play_game(board, d1, d2, a1, a2):
 	while(board.is_stalemate() != True) and (board.is_checkmate() != True): # break loop if normal stalemate or checkmate
 		if turn: # white turn
 			p1.board = board # set ai board to current game board
-			move = p1.alpha_beta_search(depth=d1) # search for next best move
+			move = p1.alpha_beta_search(depth=d1, aggression=a1) # search for next best move
 			board.push(move) # make best move
 			if check_stalemate(move=move): # break loop if stuck
 				break
@@ -87,7 +87,7 @@ def play_game(board, d1, d2, a1, a2):
 			move_count += 1	
 		else: # black turn
 			p1.board = board # set ai board to current game board
-			move = p1.alpha_beta_search(depth=d2) # search for next best move
+			move = p1.alpha_beta_search(depth=d2,aggression=a2) # search for next best move
 			board.push(move) # make best move
 			if check_stalemate(move=move): # break loop if stuck
 				break
@@ -114,7 +114,7 @@ def play_game(board, d1, d2, a1, a2):
 	else:
 		return None
 
-# loop through games as example
+# loop through games as example, changing aggression for variation
 def play_game_loop(number_of_games, white_depth, white_aggression, black_depth, black_aggression):
 	# track nubmer of wins
 	white_wins = 0
@@ -123,7 +123,12 @@ def play_game_loop(number_of_games, white_depth, white_aggression, black_depth, 
 	for i in range(0,number_of_games):
 		c_ai = chess_ai() # reliably reset board
 		print(f'\nGame {i+1}')
-		end_state = play_game(board=c_ai.board, d1=white_depth, d2=black_depth, a1=white_aggression, a2=black_aggression)
+		if i % 2 == 0:
+			end_state = play_game(board=c_ai.board, d1=white_depth, d2=black_depth, a1=white_aggression+i, a2=black_aggression)
+			print(f'White aggression motivation: {white_aggression+i}')
+		else:
+			end_state = play_game(board=c_ai.board, d1=white_depth, d2=black_depth, a1=white_aggression, a2=black_aggression+i)
+			print(f'Black aggression motivation: {black_aggression+i}')
 		if end_state == True:
 			print("White higher utility score")
 			white_wins += 1
@@ -136,6 +141,7 @@ def play_game_loop(number_of_games, white_depth, white_aggression, black_depth, 
 	print()
 	print(f'White won {white_wins} with a depth of {white_depth}')
 	print(f'Black won {black_wins} with a depth of {black_depth}')
+
 
 if __name__ == '__main__':
 
@@ -158,4 +164,3 @@ if __name__ == '__main__':
 	black_aggression = 1 # how much does black value taking a piece, higher number means more trades
 
 	play_game_loop(number_of_games=number_of_games, white_depth=white_depth, white_aggression=white_aggression, black_depth=black_depth,black_aggression=black_aggression)
-
