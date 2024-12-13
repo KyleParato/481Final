@@ -1501,3 +1501,4 @@ White higher utility score
 
 White won 87 with a depth of 2
 Black won 13 with a depth of 2
+Program took: 1301.2927339076996

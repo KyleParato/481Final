@@ -36,7 +36,7 @@ def print_board_replace(board):
 	print(board)
 
 # example search from depth one to desired depth
-def find_next_best_move_example(ai, depth):
+def find_next_best_move_example(ai, depth, aggression=1):
 	# show original board
 	print("\nOriginal Board")
 	print(c_ai.board)
@@ -44,7 +44,11 @@ def find_next_best_move_example(ai, depth):
 	for d in range(1,depth+1):
 		print("\nBest Move depth " + str(d) + "\n")
 		start = time.time()
-		print(f"\nBest move: " + str(c_ai.alpha_beta_search(depth=d,print_board=True)))
+		move = ai.alpha_beta_search(depth=d,aggression=aggression,print_board=True)
+		ai.board.push(move)
+		print_board_replace(board=ai.board)
+		ai.board.pop()
+		print(f"\nBest move: " + str(move))
 		end = time.time()
 		print(f"Elapsed time: {(end-start):.2f} seconds")
 	print() #nl for spacing
@@ -175,7 +179,10 @@ def game_data(up_to):
 			stdout = sys.stdout				# save location of stdout
 			print(f'Writing {i}_{ii}')		# print current filename
 			sys.stdout = open(name, "w")	# set stdout to file
+			start = time.time()
 			play_game_loop(number_of_games=100,white_depth=i,black_depth=ii,white_aggression=1,black_aggression=1,print_board=False) # play 100 games
+			end = time.time()
+			print(f'Program took: {end-start}')
 			sys.stdout.close()  # close file
 			sys.stdout = stdout # reset stdout
 
@@ -188,13 +195,14 @@ if __name__ == '__main__':
 	kings_pawn_opening_setup(c_ai.board)
 
 	# find next best move for kings pawn opening
-	find_next_best_move_example(c_ai, depth=4) # raising value above 5 will lead to slow compuation times
+	aggression = 3 # modify aggression motivation
+	find_next_best_move_example(c_ai, depth=4, aggression=aggression) # raising value above 5 will lead to slow compuation times
 	
 	# Play Game
-	number_of_games = 4
+	number_of_games = 3
 
-	white_depth = 2 # depth limit for white
-	black_depth = 3 # depth limit for black
+	white_depth = 1 # depth limit for white
+	black_depth = 2 # depth limit for black
 
 	white_aggression = 1 # how much does whtie value taking a piece, higher number means more trades
 	black_aggression = 1 # how much does black value taking a piece, higher number means more trades
@@ -203,4 +211,4 @@ if __name__ == '__main__':
 	play_game_loop(number_of_games=number_of_games, white_depth=white_depth, white_aggression=white_aggression, black_depth=black_depth,black_aggression=black_aggression, print_board=True)
 	
 	# generate game data
-	#game_data(1) # uncomment for regeneration of game_data
+	#game_data(2) # uncomment for regeneration of game_data
